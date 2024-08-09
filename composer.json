@@ -1,0 +1,31 @@
+{
+    "name": "lynxsolutions/php-static-analysis",
+    "description": "Static Analysis Tools Configurations for Laravel projects",
+    "type": "phpcodesniffer-standard",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Bogdan Nicorici",
+            "email": "bogdan.nicorici@lynxsolutions.eu"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "squizlabs/php_codesniffer": "^3.10",
+        "slevomat/coding-standard": "^8.15"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LynxSolutionsCodingStandard\\": "LynxSolutionsCodingStandard/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

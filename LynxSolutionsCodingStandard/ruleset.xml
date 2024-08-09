@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ruleset
+    name="LynxSolutions Coding Standard"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../vendor/squizlabs/php_codesniffer/phpcs.xsd"
+>
+    <description>LynxSolutions Coding Standard.</description>
+
+    <autoload>../autoload-standalone.php</autoload>
+
+    <config name="installed_paths" value="../../slevomat/coding-standard"/>
+
+    <rule ref="../phpcs/rulesets/base.xml"/>
+    <rule ref="../phpcs/rulesets/psr.xml"/>
+    <rule ref="../phpcs/rulesets/slevomat.xml"/>
+</ruleset>
