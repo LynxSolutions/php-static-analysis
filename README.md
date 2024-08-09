@@ -1,6 +1,6 @@
 # PHP Static Analysis Tools configurations
 
-This repository, besides the PHPCS **LynxSolutionsCodingStandard**, includes also configuration files for various static analysis tools used by LynxSolutions PHP(mostly Laravel) projects.
+This repository, besides the PHPCS **LynxSolutionsCodingStandard**, also includes configuration files for various static analysis tools used in LynxSolutions PHP(mostly Laravel) projects.
 
 ## Installation
 
