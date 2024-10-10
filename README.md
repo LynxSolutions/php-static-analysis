@@ -97,6 +97,21 @@ includes:
     - vendor/lynxsolutions/php-static-analysis/phpstan/laravel.neon
 ```
 
+If you don't have a `phpstan.neon` file, here's a simple example:
+```neon
+includes:
+    - vendor/lynxsolutions/php-static-analysis/phpstan/laravel.neon
+
+parameters:
+    paths:
+        - app
+        - bootstrap
+        - config
+        - database
+        - routes
+        - tests
+```
+
 Now you can run:
 ```shell
 vendor/bin/phpstan analyse
