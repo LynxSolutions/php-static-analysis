@@ -79,10 +79,22 @@ vendor/bin/phpmd app,bootstrap,config,database,routes,tests text phpmd.xml
 ```
 
 ### PHPStan:
-In your project's `phpstan.neon` include the following:
+In your project's `phpstan.neon` file add the following line:
 ```neon
 includes:
-    - vendor/lynxsolutions/php-static-analysis/lib/phpstan/phpstan.neon
+    - vendor/lynxsolutions/php-static-analysis/phpstan/phpstan.neon
+```
+
+#### For Laravel projects:
+First, make sure you install the [`larastan/larastan`](https://github.com/larastan/larastan) package:
+```shell
+composer require --dev larastan/larastan
+```
+
+Then, in your project's `phpstan.neon`, include the following:
+```neon
+includes:
+    - vendor/lynxsolutions/php-static-analysis/phpstan/laravel.neon
 ```
 
 Now you can run:
