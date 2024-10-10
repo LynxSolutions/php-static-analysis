@@ -1,0 +1,11 @@
+includes:
+    - ./vendor/lynxsolutions/php-static-analysis/phpstan/phpstan.neon
+    - ./vendor/larastan/larastan/extension.neon
+parameters:
+    paths:
+        - app
+        - bootstrap
+        - config
+        - database
+        - routes
+        - tests
