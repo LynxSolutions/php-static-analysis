@@ -52,12 +52,7 @@ vendor/bin/phpcs
 ```
 
 ### PHP Mess Detector:
-If you don't have the `phpmd/phpmd` package installed, you can install it by running:
-```shell
-composer require --dev phpmd/phpmd
-```
-
-Then, in your project's `phpmd.xml` file add the following line:
+In your project's `phpmd.xml` file add the following line:
 ```xml
 <rule ref="vendor/lynxsolutions/php-static-analysis/phpmd/phpmd.xml"/>
 ```
@@ -81,4 +76,16 @@ If you don't have a `phpmd.xml` file, here's a simple example:
 Now you can run:
 ```shell
 vendor/bin/phpmd app,bootstrap,config,database,routes,tests text phpmd.xml
+```
+
+### PHPStan:
+In your project's `phpstan.neon` include the following:
+```neon
+includes:
+    - vendor/lynxsolutions/php-static-analysis/lib/phpstan/phpstan.neon
+```
+
+Now you can run:
+```shell
+vendor/bin/phpstan analyse
 ```
